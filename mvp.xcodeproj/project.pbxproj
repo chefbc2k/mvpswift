@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7CFF288A402A3C62AF2F5AFC /* Pods_mvp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C058402C31BDAC135A3450 /* Pods_mvp.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		51B5B1FC2CE1EC3F00028F20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C058402C31BDAC135A3450 /* Pods_mvp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B5B1E72CE1EC3E00028F20 /* mvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B5B1FB2CE1EC3F00028F20 /* mvpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B5B2052CE1EC3F00028F20 /* mvpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		598BFE6DBD783913F78E0EA4 /* Pods-mvp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvp.debug.xcconfig"; path = "Target Support Files/Pods-mvp/Pods-mvp.debug.xcconfig"; sourceTree = "<group>"; };
+		A1023CF3686E7D20A5B31C81 /* Pods-mvp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvp.release.xcconfig"; path = "Target Support Files/Pods-mvp/Pods-mvp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -37,6 +44,20 @@
 			);
 			target = 51B5B1E62CE1EC3E00028F20 /* mvp */;
 		};
+		51B5B2592CE1F34A00028F20 /* Exceptions for "mvp" folder in "mvpTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				home.swift,
+			);
+			target = 51B5B1FA2CE1EC3F00028F20 /* mvpTests */;
+		};
+		51B5B25A2CE1F34A00028F20 /* Exceptions for "mvp" folder in "mvpUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				home.swift,
+			);
+			target = 51B5B2042CE1EC3F00028F20 /* mvpUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,17 +65,23 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				51B5B20D2CE1EC3F00028F20 /* Exceptions for "mvp" folder in "mvp" target */,
+				51B5B2592CE1F34A00028F20 /* Exceptions for "mvp" folder in "mvpTests" target */,
+				51B5B25A2CE1F34A00028F20 /* Exceptions for "mvp" folder in "mvpUITests" target */,
 			);
 			path = mvp;
 			sourceTree = "<group>";
 		};
 		51B5B1FE2CE1EC3F00028F20 /* mvpTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = mvpTests;
 			sourceTree = "<group>";
 		};
 		51B5B2082CE1EC3F00028F20 /* mvpUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = mvpUITests;
 			sourceTree = "<group>";
 		};
@@ -65,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFF288A402A3C62AF2F5AFC /* Pods_mvp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +120,8 @@
 				51B5B1FE2CE1EC3F00028F20 /* mvpTests */,
 				51B5B2082CE1EC3F00028F20 /* mvpUITests */,
 				51B5B1E82CE1EC3E00028F20 /* Products */,
+				CD6CA8B86C87A9D28F5095C8 /* Pods */,
+				926929E065AFEBAF1DB9DB1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +135,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		926929E065AFEBAF1DB9DB1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C058402C31BDAC135A3450 /* Pods_mvp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD6CA8B86C87A9D28F5095C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				598BFE6DBD783913F78E0EA4 /* Pods-mvp.debug.xcconfig */,
+				A1023CF3686E7D20A5B31C81 /* Pods-mvp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51B5B20E2CE1EC3F00028F20 /* Build configuration list for PBXNativeTarget "mvp" */;
 			buildPhases = (
+				F9D0D2A51FA30C4C4BAC2153 /* [CP] Check Pods Manifest.lock */,
 				51B5B1E32CE1EC3E00028F20 /* Sources */,
 				51B5B1E42CE1EC3E00028F20 /* Frameworks */,
 				51B5B1E52CE1EC3E00028F20 /* Resources */,
+				B6B8605C9D75CA5ABA0D535C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +174,6 @@
 				51B5B1E92CE1EC3E00028F20 /* mvp */,
 			);
 			name = mvp;
-			packageProductDependencies = (
-			);
 			productName = mvp;
 			productReference = 51B5B1E72CE1EC3E00028F20 /* mvp.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +195,6 @@
 				51B5B1FE2CE1EC3F00028F20 /* mvpTests */,
 			);
 			name = mvpTests;
-			packageProductDependencies = (
-			);
 			productName = mvpTests;
 			productReference = 51B5B1FB2CE1EC3F00028F20 /* mvpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +216,6 @@
 				51B5B2082CE1EC3F00028F20 /* mvpUITests */,
 			);
 			name = mvpUITests;
-			packageProductDependencies = (
-			);
 			productName = mvpUITests;
 			productReference = 51B5B2052CE1EC3F00028F20 /* mvpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +288,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B6B8605C9D75CA5ABA0D535C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvp/Pods-mvp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvp/Pods-mvp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mvp/Pods-mvp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D0D2A51FA30C4C4BAC2153 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mvp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51B5B1E32CE1EC3E00028F20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +370,7 @@
 /* Begin XCBuildConfiguration section */
 		51B5B20F2CE1EC3F00028F20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598BFE6DBD783913F78E0EA4 /* Pods-mvp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +402,7 @@
 		};
 		51B5B2102CE1EC3F00028F20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1023CF3686E7D20A5B31C81 /* Pods-mvp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

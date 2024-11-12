@@ -22,7 +22,8 @@ struct mvpApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+button
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
